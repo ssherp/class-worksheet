@@ -19,7 +19,8 @@ header {
 }
 
 nav {
-  display: flex;
+  display: flex; 
+  justify-content: end;
   background-color: #d8a47f;
 }
 
@@ -45,11 +46,12 @@ footer {
 }
 
 .product button {
-  font-size: 150%;
+  font: size 150%;
 }
 
 .product-slideshow {
-  display: flex;
+ display: flex;
+ align-items: center;
 }
 
 .product-image {
