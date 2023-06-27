@@ -1,15 +1,20 @@
-:root
-{
-  --light: white;
- --boder-radius: 50px;
-
+/* Create CSS variables at the root of the document to be used throughout the style sheet */
+:root {
+  --white: #fff;
+  --dark-blue: #13293d;
+  --tan: #d8a47f;
+  /* You can use it with any value that is repeated throughout the sheet */
+  --border-radius: 50px;
+  --farley: flex-start
 }
+
 body {
   font-size: 16px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
+  justify-content: var(--farley);
 }
 
 h1 {
@@ -25,24 +30,26 @@ h2 {
 header {
   padding: 40px;
   text-align: center;
-  background: #13293d;
-  color: var(--light);
+  /* Refer to CSS values by the name of the custom property we assigned it */
+  background: var(--dark-blue);
+  color: var(--white);
 }
 
 nav {
   display: flex;
-  background-color: #d8a47f;
+  background-color: var(--tan);
 }
 
 nav a {
-  color: #13293d;
+  color: var(--dark-blue);
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
 }
 
 nav a:hover {
-  background-color: var(--light);
+  background-color: var(--white);
+  color: var(--dark-blue);
 }
 
 main {
@@ -55,14 +62,14 @@ footer {
   bottom: 0;
   padding: 20px;
   text-align: center;
-  background: #13293d;
-  color: var(--light);
+  background: var(--dark-blue);
+  color: var(--white);
   margin-top: auto;
 }
 
 .products {
   flex: 1;
-  background-color: var(--light);
+  background-color: var(--white);
   padding: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -72,7 +79,7 @@ footer {
 .card {
   border-style: solid;
   border-width: 1px;
-  border-radius: 50px;
+  border-radius: var(--border-radius);
   padding: 10px;
   flex: 0 0 300px;
   transform: rotate(8deg);
@@ -81,7 +88,8 @@ footer {
 }
 
 .card > header {
-  border-radius: 50px 50px 0px 0px;
+  /* This is the same as `border-radius: 50px 50px 0 0 */
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
   padding: 20px;
 }
 
