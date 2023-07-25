@@ -20,6 +20,8 @@ var myNumberDecimal = 100.100;
 var isMyBooleanTrue = true;
 var isMyBooleanFalse = false;
 
+// isMyBooleanTrue = false;
+
 //  isMyBooleanFalse = "yep";
 
 // To check the type of data, use typeof followed by the name of the variable

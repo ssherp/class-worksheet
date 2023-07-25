@@ -19,8 +19,7 @@ header {
 }
 
 nav {
-  display: flex; 
-  justify-content: end;
+  display: flex;
   background-color: #d8a47f;
 }
 
@@ -46,12 +45,11 @@ footer {
 }
 
 .product button {
-  font: size 150%;
+  font-size: 150%;
 }
 
 .product-slideshow {
- display: flex;
- align-items: center;
+  display: flex;
 }
 
 .product-image {

@@ -33,7 +33,7 @@ console.log(namesArr[3]);
 // We use the array's length property to determine how many elements are in the array
 console.log(namesArr.length);
 
-// namesArr[4] = "Bob";
+// namesArr[1] = "Bob";//['Bob', 'Asher', 'Sage', 'Faye']
 // namesArr[namesArr.length] = "Bob";
 namesArr.push("Bob");
 console.log(namesArr);//['Farley', 'Asher', 'Sage', 'Faye', 'Bob']

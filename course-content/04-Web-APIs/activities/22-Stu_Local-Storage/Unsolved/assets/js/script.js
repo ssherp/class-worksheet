@@ -13,11 +13,7 @@ function displayMessage(type, message) {
 }
 
 function renderLastRegistered() {
-  var registeredEmail= localStorage.getItem(registeredEmail);
-  var registeredPass= localStorage.getItem(registeredPass);
-  userEmailSpan.textContent=registeredEmail;
-  userPasswordSpan.textContent=registeredPass;
-console.log (registeredEmail)
+  // TODO: Retrieve the last email and password and render it to the page
 }
 
 signUpButton.addEventListener("click", function(event) {

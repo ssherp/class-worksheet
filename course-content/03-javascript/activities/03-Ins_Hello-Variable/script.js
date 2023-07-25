@@ -21,4 +21,4 @@ console.log("My name is ");
 // Logs "My name is Asher"
 console.log("My name is " + studentName + ". My age is " + studentAge);
 
-console.log("My name is " + studentName + ". My age is " + age);//Uncaught ReferenceError: age is not defined
+console.log("My name is " + studentName + ". My age is " + studentAge);//Uncaught ReferenceError: age is not defined

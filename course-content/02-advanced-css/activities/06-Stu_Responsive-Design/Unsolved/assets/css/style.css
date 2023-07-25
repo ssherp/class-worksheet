@@ -38,10 +38,10 @@ nav a {
 What is the flex-wrap property? 
 TODO: Write your answer here 
 */
- main {
+main {
   display: flex;
   flex-wrap: wrap;
-} 
+}
 
 aside {
   flex: 1;
